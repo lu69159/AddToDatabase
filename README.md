@@ -58,13 +58,13 @@ Usage: Place the ATD.js file in the scripts folder of your mod, then add the fol
   
 After adding, you can use the following functions:
 
-  ATD.addAllToDatabase(modname, myplanet);// This function automatically adds all content belonging to your mod to the myplanetplanet.
+  ATD.AddAllToDatabase(modname, myplanet);// This function automatically adds all content belonging to your mod to the myplanet planet.
   
-  ATD.AddPlanetToDatabase(planet, myplanet);// This function adds all content from an existing planet to the myplanetplanet.
+  ATD.AddPlanetToDatabase(planet, myplanet);// This function adds all content from an existing planet to the myplanet planet.
   
-  ATD.AddPlanetToDatabaseWithoutSectors(planet, myplanet);// This function adds all content from an existing planet to the myplanetplanet (without adding sector content to the core database).
+  ATD.AddPlanetToDatabaseWithoutSectors(planet, myplanet);// This function adds all content from an existing planet to the myplanet planet (without adding sector to the core database).
   
-  ATD.AddPlanetToDatabaseWithFunc(planet, myplanet, func);// This function adds content from an existing planet to the myplanetplanet, with the condition of addition determined by func.
+  ATD.AddPlanetToDatabaseWithFunc(planet, myplanet, func);// This function adds content from an existing planet to the myplanet planet, with the condition of addition determined by func.
   
   
 Here are some addition examples:
@@ -78,7 +78,7 @@ Here are some addition examples:
   ATD.AddPlanetToDatabaseWithFunc(Planets.serpulo, myplanet, (thing) => {thing != Blocks.advancedLaunchPad && thing != Blocks.landingPad });
   
 
-Below is an example from the author's mod planet, which adds mod content to the Neptune planet, as well as all content from Serpulo except 【Serpulo map sectors, launch pads, landing pads, and the interplanetary accelerator】:
+Below is an example from the author's mod planet, which adds mod content to the Nepture planet, as well as all content from Serpulo except 【Serpulo map sectors, launch pad, landing pad, and the interplanetary accelerator】:
 
   const NT = new Planet("Nepture", Planets.sun, 1.2, 2.5);
   
