@@ -1,5 +1,5 @@
 # AddToDatabase
-中文：
+
 一个替代ACD前置模组修复星球建筑的JS脚本，提供了几个函数来添加星球内容。
 使用方法：在你的模组的scripts文件夹下放置ATD.js文件，然后在你的星球JS脚本中添加:
   const ATD = require("ATD");
@@ -31,8 +31,9 @@
   ATD.AddPlanetToDatabaseWithoutSectors(NT, Planets.serpulo);
 
 有任何问题可以联系作者，QQ:2909165527
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-英文：
+
 A JS script that replaces the ACD prerequisite mod to fix planet buildings. It provides several functions to add planet content.
 Usage: Place the ATD.js file in the scripts folder of your mod, then add the following to your planet JS script:
   const ATD = require("ATD");
