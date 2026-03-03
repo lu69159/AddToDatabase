@@ -30,23 +30,16 @@ ATD.AddPlanetToDatabaseWithFunc(Planets.serpulo, myplanet, (thing) => {thing != 
 ## 完整示例
 这是作者的MOD中星球的示例，实现了在Nepture星球添加了模组内容和赛普罗星球中除【赛普罗地图区块，发射台，接受台，行星际加速器】外的所有内容：
 ``` js Nepture.js
-
   const NT = new Planet("Nepture", Planets.sun, 1.2, 2.5);
-  
-  ...... //星球设置相关代码
-  
+  ...... //星球设置相关代码 
   exports.NT = NT;
   
   const ATD = require("base/ATD");
-  
   ATD.AddAllToDatabase("液体工艺", NT);
-  
   ATD.AddPlanetToDatabaseWithFunc(Planets.serpulo, NT, (thing) => {
   	return !(thing instanceof SectorPreset) && thing != Blocks.advancedLaunchPad &&
   		thing != Blocks.landingPad && thing != Blocks.interplanetaryAccelerator;
   });
-  
-  ATD.AddPlanetToDatabaseWithoutSectors(NT, Planets.serpulo);
 ```
 有任何问题可以联系作者，QQ:2909165527
 
@@ -83,22 +76,15 @@ ATD.AddPlanetToDatabaseWithFunc(Planets.serpulo, myplanet, (thing) => {thing != 
 ## Complete Example
 Below is an example from the author's mod planet, which adds mod content to the Nepture planet, as well as all content from Serpulo except 【Serpulo map sectors, launch pad, landing pad, and the interplanetary accelerator】:
 ``` js Nepture.js
-
   const NT = new Planet("Nepture", Planets.sun, 1.2, 2.5);
-  
   ...... //planet setup code
-  
   exports.NT = NT;
   
   const ATD = require("base/ATD");
-  
   ATD.AddAllToDatabase("液体工艺", NT);
-  
   ATD.AddPlanetToDatabaseWithFunc(Planets.serpulo, NT, (thing) => {
   	return !(thing instanceof SectorPreset) && thing != Blocks.advancedLaunchPad &&
   		thing != Blocks.landingPad && thing != Blocks.interplanetaryAccelerator;
   });
-  
-  ATD.AddPlanetToDatabaseWithoutSectors(NT, Planets.serpulo);
 ```
 If you have any questions, you can contact the author，QQ:2909165527
